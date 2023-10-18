@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+}
+.images{
+    display: flex;
+    width: 100%;
+}
+.images img{
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease;
+}
+.images input{
+    display: none;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.dots label{
+    width: 15px;
+    height: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 4px;
+}
+.dots label:hover{
+    background: white;
+}
+#img1:checked ~ .m1{
+    margin-left: 0;
+}
+#img2:checked ~ .m2{
+    margin-left: -100%;
+}
+#img3:checked ~ .m3{
+    margin-left: -200%;
+}
+#img4:checked ~ .m4{
+    margin-left: -300%;
+}
+#img5:checked ~ .m5{
+    margin-left: -400%;
+}
