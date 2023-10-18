@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider Using Animation - Thapa Technical</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slider{
+            width: 80%;
+            height: 80%;
+            background-image: url("image1.jpg");
+            background-size: 100% 100%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            animation: changeImage 10s linear infinite;
+        }
+        @keyframes changeImage{
+            0%{
+                background-image: url("image2.jpg");
+            }
+            25%{
+                background-image: url("image3.jpg");
+            }
+            50%{
+                background-image: url("image4.jpg");
+            }
+            75%{
+                background-image: url("image6.jpg");
+            }
+            100%{
+                background-image: url("image7.jpg");
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider"></div>
+</body>
+</html>
